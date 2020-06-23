@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Recipes</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="nav">
+          <h2 class="nav__logo">foodbar</h2>
+          <svg class="nav__menu">
+            <use xlink:href="img/sprite.svg#icon-menu"></use>
+          </svg>
+        </nav>
+        <div class="top-section">
+          <div class="top-section__content">
+            <h1>Foodbar</h1>
+            <h1>Recipes</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="btn">Register</a>
+            <a href="#" class="btn--newsletter"
+              >or sign up to our free newsletter
+              <svg class="btn--newsletter-icon">
+                <use xlink:href="img/sprite.svg#icon-arrow_right_alt"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header>
+      <div class="mid">
+        <div class="mid__header">
+          <h2 class="mid__title">Recipes</h2>
+
+          <form action="#" class="search">
+            <input
+              type="text"
+              class="search__input"
+              placeholder="Search recipes..."
+            />
+            <button class="search__button">
+              <svg class="search__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+          <div class="mid__sort">
+            <p>Sort by:</p>
+            <button class="btn--sort"></button>
+              Popular
+              <svg class="btn--sort-icon">
+                <use xlink:href="img/sprite.svg#icon-keyboard_arrow_down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <aside class="sidebar">
+          <div class="sidebar__filter">
+            <p>Filter by:</p>
+            <button class="btn--filter" onclick="clearFilter()">
+              Clear filter
+            </button>
+          </div>
+          <div class="sidebar__categories">
+            <label class="input-label"
+              >All Cuisines
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="input-label"
+              >Pizza
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="input-label"
+              >Burgers
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="input-label"
+              >Barbecue
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="input-label"
+              >Desserts
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="input-label"
+              >Indian
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="input-label"
+              >Chinese
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="input-label"
+              >Thai
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="input-label"
+              >Mexican
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="input-label"
+              >Greek
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="input-label"
+              >Italian
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="input-label"
+              >Japanese
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </aside>
+
+        <main class="main">
+          <div class="main__cards">
+            <a href="#" class="card__item">
+              <div class="card">
+                <div class="card__image"></div>
+                <div class="card__body">
+                  <div class="card__title">
+                    <h2>The Dirt One (Beef)</h2>
+                  </div>
+
+                  <div class="card__stars-box">
+                    <div class="card__stars">
+                      <svg class="card__icon--star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="card__icon--star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="card__icon--star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="card__icon--star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="card__icon--star">
+                        <use xlink:href="img/sprite.svg#icon-star_half"></use>
+                      </svg>
+                    </div>
+                    <p class="card__reviews">4.5 (92)</p>
+                  </div>
+
+                  <div class="card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore.
+                  </div>
+
+                  <div class="card__info">
+                    <p>
+                      <svg class="card__icon">
+                        <use xlink:href="img/sprite.svg#icon-access_time"></use>
+                      </svg>
+                      25 min
+                    </p>
+
+                    <p>
+                      <svg class="card__icon">
+                        <use
+                          xlink:href="img/sprite.svg#icon-person_outline"
+                        ></use>
+                      </svg>
+                      2 people
+                    </p>
+
+                    <p>
+                      <svg class="card__icon">
+                        <use xlink:href="img/sprite.svg#icon-whatshot"></use>
+                      </svg>
+                      1050 kcal
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="card__item">
+              <div class="card">
+                <div class="card__image"></div>
+                <div class="card__body">
+                  <div class="card__title">
+                    <h2>The Dirt One (Beef)</h2>
+                  </div>
+
+                  <div class="card__stars-box">
+                    <div class="card__stars">
+                      <svg class="card__icon--star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="card__icon--star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="card__icon--star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="card__icon--star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="card__icon--star">
+                        <use xlink:href="img/sprite.svg#icon-star_half"></use>
+                      </svg>
+                    </div>
+                    <p class="card__reviews">4.5 (92)</p>
+                  </div>
+
+                  <div class="card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore.
+                  </div>
+
+                  <div class="card__info">
+                    <p>
+                      <svg class="card__icon">
+                        <use xlink:href="img/sprite.svg#icon-access_time"></use>
+                      </svg>
+                      25 min
+                    </p>
+
+                    <p>
+                      <svg class="card__icon">
+                        <use
+                          xlink:href="img/sprite.svg#icon-person_outline"
+                        ></use>
+                      </svg>
+                      2 people
+                    </p>
+
+                    <p>
+                      <svg class="card__icon">
+                        <use xlink:href="img/sprite.svg#icon-whatshot"></use>
+                      </svg>
+                      1050 kcal
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="card__item">
+              <div class="card">
+                <div class="card__image"></div>
+                <div class="card__body">
+                  <div class="card__title">
+                    <h2>The Dirt One (Beef)</h2>
+                  </div>
+
+                  <div class="card__stars-box">
+                    <div class="card__stars">
+                      <svg class="card__icon--star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="card__icon--star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="card__icon--star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="card__icon--star">
+                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="card__icon--star">
+                        <use xlink:href="img/sprite.svg#icon-star_half"></use>
+                      </svg>
+                    </div>
+                    <p class="card__reviews">4.5 (92)</p>
+                  </div>
+
+                  <div class="card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore.
+                  </div>
+
+                  <div class="card__info">
+                    <p>
+                      <svg class="card__icon">
+                        <use xlink:href="img/sprite.svg#icon-access_time"></use>
+                      </svg>
+                      25 min
+                    </p>
+
+                    <p>
+                      <svg class="card__icon">
+                        <use
+                          xlink:href="img/sprite.svg#icon-person_outline"
+                        ></use>
+                      </svg>
+                      2 people
+                    </p>
+
+                    <p>
+                      <svg class="card__icon">
+                        <use xlink:href="img/sprite.svg#icon-whatshot"></use>
+                      </svg>
+                      1050 kcal
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="/js/index.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+  </body>
+</html>

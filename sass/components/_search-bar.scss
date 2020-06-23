@@ -1,0 +1,48 @@
+.search {
+  flex: 0 0 66%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+
+  &__input {
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: inherit;
+    background-color: #eee;
+    border: none;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    width: 70%;
+    transition: all 0.2s;
+    margin-right: -4.2rem;
+
+    &:focus {
+      outline: none;
+      background-color: #eee;
+    }
+
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--color-grey-dark-2);
+    }
+  }
+  &__input:focus + &__button {
+    background-color: #eee;
+  }
+
+  &__button {
+    border: none;
+    background-color: #eee;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__icon {
+    height: 3rem;
+    width: 3rem;
+    fill: var(--color-grey-dark-3);
+  }
+}

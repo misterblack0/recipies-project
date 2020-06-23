@@ -1,0 +1,15 @@
+.flow {
+  --flow-space: 1em;
+}  
+
+.flow > * + * { 
+  margin-top: var(--flow-space);
+}
+
+.bg-primary {
+  background: #FFF3F1;
+}
+
+.color-primary {
+  color: #FD6D24;
+}

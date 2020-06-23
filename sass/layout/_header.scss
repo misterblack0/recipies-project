@@ -1,0 +1,43 @@
+.header {
+  height: 70vh;
+  width: 85vw;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  
+  margin: 4rem 6rem;
+  
+
+  &__logo {
+    font-size: 3.5rem;
+    color: var(--color-primary);
+    letter-spacing: 0.3rem;
+  }
+
+  &__menu {
+    height: 4rem;
+    width: 4rem;
+    fill: var(--color-grey-dark-2);
+    cursor: pointer;
+  }
+}
+
+.top-section {
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-tertiary);
+  border-radius: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(/img/header.png);
+  background-repeat: no-repeat;
+  background-position: 80% 45%; 
+
+  &__content {
+    width: 35%;
+    margin-left: 7rem;
+  }
+}
